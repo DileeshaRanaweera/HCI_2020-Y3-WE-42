@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "hciDilee"
+    }
+  },
+  "defaultProject": "hciDilee",
+  "cli": {
+    "analytics": "1adfbe44-b42b-4c96-9e18-c0108ac95d84"
+  }
 }

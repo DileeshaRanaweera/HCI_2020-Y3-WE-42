@@ -1,0 +1,16 @@
+.inner
+{
+    display: inline-block;
+}
+
+::placeholder {
+    color: black;
+    font-weight: bolder;
+    text-align: center;
+    font-size: large;
+  }
+
+  .required
+{
+    color: red;
+}
