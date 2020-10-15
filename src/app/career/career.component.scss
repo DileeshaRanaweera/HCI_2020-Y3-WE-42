@@ -1,0 +1,105 @@
+a:hover,a:focus{
+  text-decoration: none;
+  outline: none;
+}
+.vertical-tab{
+  font-family: 'Lato', sans-serif;
+  display: table;
+}
+.vertical-tab .nav-tabs{
+  display: table-cell;
+  width: 28%;
+  min-width: 28%;
+  vertical-align: top;
+  border: none;
+}
+.vertical-tab .nav-tabs li{
+ float: none;
+ vertical-align: top;
+}
+.vertical-tab .nav-tabs li a{
+  color: #333;
+  background: #fff;
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 13px 10px 10px;
+  margin: 0 9px 9px 0;
+  border-radius: 10px;
+  border: 2px solid #a8b1ce;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  display: block;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  transition: all 0.3s ease 0.3s;
+}
+.vertical-tab .nav-tabs li.active a,
+.vertical-tab .nav-tabs li a:focus{
+  border: 2px solid #686e75;
+}
+.vertical-tab .nav-tabs li a:hover,
+.vertical-tab .nav-tabs li.active a,
+.vertical-tab .nav-tabs li.active a:hover{
+  color: #fff;
+  background: #fff;
+  border-radius: 50px;
+}
+.vertical-tab .nav-tabs li a:before{
+  content: '';
+  background: #e76666;
+  height: 100%;
+  width: 100%;
+  border-radius: 30px;
+  opacity: 0;
+  transform: scale(0.3);
+  position: absolute;
+  left: -60px;
+  top: -25px;
+  z-index: -1;
+  transition: opacity 0.1s, top 0.3s ease,left 0.3s ease ,transform 0.3s ease 0.2s;
+}
+.vertical-tab .nav-tabs li a:hover:before,
+.vertical-tab .nav-tabs li.active a:before,
+.vertical-tab .nav-tabs li.active a:hover:before{
+  opacity: 1;
+  transform: scale(1);
+  left: 0;
+  top: 0;
+}
+.vertical-tab .tab-content{
+  color: #333;
+  background: #fff;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  line-height: 25px;
+  padding: 20px 20px 10px;
+  margin-top: 10px;
+  border: 5px solid #000294;
+  border-radius: 20px;
+  display: table-cell;
+  position: relative;
+}
+.vertical-tab .tab-content h3{
+  color: #001694;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 0 0 7px 0;
+}
+@media only screen and (max-width: 479px){
+  .vertical-tab .nav-tabs{
+      width: 100%;
+      display: block;
+      border: none;
+  }
+  .vertical-tab .nav-tabs li a{ margin: 0 0 10px; }
+  .vertical-tab .tab-content{
+      padding: 25px 20px;
+      display: block;
+  }
+  .vertical-tab .tab-content h3{ font-size: 18px; }
+}
+

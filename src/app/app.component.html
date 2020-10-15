@@ -1,0 +1,177 @@
+<!--START SCROLL TOP BUTTON -->
+<a class="scrollToTop" href="#">
+  <i class="fa fa-angle-up"></i>
+</a>
+<!-- END SCROLL TOP BUTTON -->
+<header id="mu-header">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 col-md-12">
+        <div class="mu-header-area">
+          <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+              <div class="mu-header-top-left">
+                <div class="mu-top-email">
+                  <i class="fa fa-envelope"></i>
+                  <span>info@lankabell.com</span>
+                </div>
+                <div class="mu-top-phone">
+                  <i class="fa fa-phone"></i>
+                  <span>011 0123456</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+              <div class="mu-header-top-right">
+                <nav>
+                  <ul class="mu-top-social-nav">
+                    <li><a href="#"><span class="fa fa-facebook"></span></a></li>
+                    <li><a href="#"><span class="fa fa-twitter"></span></a></li>
+                    <li><a href="#"><span class="fa fa-google-plus"></span></a></li>
+                    <li><a href="#"><span class="fa fa-linkedin"></span></a></li>
+                    <li><a href="#"><span class="fa fa-youtube"></span></a></li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<section id="mu-menu">
+  <nav class="navbar navbar-default" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- FOR MOBILE VIEW COLLAPSED BUTTON -->
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <!-- LOGO -->
+        <!-- TEXT BASED LOGO -->
+        <!-- <a class="navbar-brand" href="index.html"><i class="fa fa-university"></i><span>LankaBell</span></a>-->
+        <!-- IMG BASED LOGO  -->
+        <a class="navbar-brand" href="index.html"><img src="assets/img/logo.png" alt="logo"></a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul id="top-menu" class="nav navbar-nav navbar-right main-nav">
+          <li ><a routerLink="/" routerLinkActive="active"  >Home</a></li>
+          <li><a routerLink="/aboutus" routerLinkActive="active" >About Us</a></li>
+          <li class="dropdown">
+            <a href="#mu-service" class="dropdown-toggle" data-toggle="dropdown">Products</a>
+            <!--<ul class="dropdown-menu" role="menu">
+              <li><a href="course.html">Course Archive</a></li>
+              <li><a href="course-detail.html">Course Detail</a></li>
+            </ul>-->
+          </li>
+          <li><a>Services</a></li>
+          <!--<li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Blog <span class="fa fa-angle-down"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="blog-archive.html">Blog Archive</a></li>
+              <li><a href="blog-single.html">Blog Single</a></li>
+            </ul>
+          </li>-->
+            <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Bell Care <span class="fa fa-angle-down"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="" routerLink="/contactus" routerLinkActive="active">Contact Us</a></li>
+              <li><a href=""routerLink="/branches" routerLinkActive="active">Branch Network</a></li>
+              <li><a href=""routerLink="/faqs" routerLinkActive="active">Bell Faq's</a></li>
+            </ul>
+          </li>
+          <li><a href="#" id="mu-search-icon"><i class="fa fa-search"></i></a></li>
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div>
+  </nav>
+</section>
+
+<router-outlet></router-outlet>
+
+<!-- Start footer -->
+<footer id="mu-footer">
+  <!-- start footer top -->
+  <div class="mu-footer-top">
+    <div class="container">
+      <div class="mu-footer-top-area">
+        <div class="row">
+          <div class="col-lg-3 col-md-3 col-sm-3">
+            <div class="mu-footer-widget">
+              <h4>About Lanka bell</h4>
+              <p>Lanka Bell is a world-class telecommunications operator that provides a full range of telecommunication services to businesses and residential customers in Sri Lanka. </p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-3">
+            <div class="mu-footer-widget">
+              <h4>Company</h4>
+              <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="">Our Team</a></li>
+                <li><a href="">Missions</a></li>
+                <li><a href="">Our Projects</a></li>
+                <li><a href="">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-3">
+            <div class="mu-footer-widget">
+              <h4>Services</h4>
+              <ul>
+                <li><a href="">Phone</a></li>
+                <li><a href="#">Broadband</a></li>
+                <li><a href="">Bell Fax</a></li>
+                <li><a href="">Directory</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-3">
+            <div class="mu-footer-widget">
+              <h4>News letter</h4>
+              <p>Get latest update, news & academic offers</p>
+              <form class="mu-subscribe-form">
+                <input type="email" placeholder="Type your Email">
+                <button class="btn btn-primary" type="submit">Subscribe!</button>
+              </form>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-3">
+            <div class="mu-footer-widget">
+              <h4>Contact</h4>
+              <address>
+                <p>P.O. Box 320, Ross, California 9495, USA</p>
+                <p>Phone: 1575</p>
+                <p>Website: lankabell.com</p>
+                <p>Email: bellcare@mail.lankabell.com</p>
+              </address>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end footer top -->
+  <!-- start footer bottom -->
+  <div class="mu-footer-bottom">
+    <div class="container">
+      <div class="mu-footer-bottom-area">
+        <div class="d-flex justify-content-center">
+          <a href="#"><span class="fa fa-facebook"></span></a>
+          <a href="#"><span class="fa fa-twitter"></span></a>
+          <a href="#"><span class="fa fa-google-plus"></span></a>
+          <a href="#"><span class="fa fa-linkedin"></span></a>
+          <a href="#"><span class="fa fa-youtube"></span></a>
+        </div><br>
+        <p>&copy; All Right Reserved. Designed by <a rel="nofollow">Sri</a></p>
+      </div>
+    </div>
+  </div>
+  <!-- end footer bottom -->
+</footer>
+<!-- End footer -->
+
+
